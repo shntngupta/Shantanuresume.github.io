@@ -60,8 +60,8 @@ body {
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
     [class*="col-"] {
-      width: 100%;
-      height:100%;
+      width: 65%;
+      font-size = 8px;
       
     }
     
