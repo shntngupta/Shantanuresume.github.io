@@ -12,7 +12,7 @@ body {
 .full {
     width: 1000%;
     width: 820px;
-    height: 30.25cm;
+    height: auto;
     background-color: white;
     margin: 10px;
     display: grid;
@@ -55,20 +55,22 @@ body {
   color: #f1f1f1; /* Grey text */
   width: 103%; /* Full width */
   padding: 10px; /* Some padding */
-  height: auto;
+  height:auto;
 }
 @media screen and (max-width: 800px) {
     .left, .main, .right {
-      width: 100%;
+      width: auto;
       word-wrap: break-word;/* The width is 100%, when the viewport is 800px or smaller */
+      height:auto;
     }
-    .right {
+    
+    
+    .left 
+
+        
+  ;}
       
-        word-wrap: break-word;
-    }
-    .left {
-        font-size: auto;width: auto; float: left; height: auto;
-      margin: 10px;
+    
 
     
 }
