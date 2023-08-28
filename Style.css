@@ -10,7 +10,7 @@ body {
 	
 }
 .full {
-    width: 60%;
+    width: 1000%;
     width: 820px;
     height: 30.25cm;
     background-color: white;
@@ -57,12 +57,20 @@ body {
   padding: 10px; /* Some padding */
   height: 30cm;
 }
-@media only screen and (max-width: 800px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 65%;
-      font-size = 8px;
-      
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
+    .right {
+        width: 14cm;  background-color: var(--white); height: auto;
+        
+        margin: 20px 0px; padding:20px 20px;
+        box-shadow: -8px 50px 50px 10px #54585d52;
+        font-size: auto
+    }
+    .left {
+        font-size: auto;width: auto; float: left; height: auto;
+      margin: 10px;
+
     
-  }
+}
