@@ -5,72 +5,70 @@
 }
 body {
     background-color: rgb(253, 253, 253);
-  display: flex;
+   display: flex;
     justify-content: center;
+	
 }
 .full {
-    width: ;
-    height: 11inch;
+    width: 1000%;
+    width: 820px;
+    height: 30.25cm;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 2fr 4fr;
 }
 .left {
-    width:auto;
-  margin:10px;
-  height:auto;
+    font-size: 11.5pt;width: 7cm; float: left; height: 29.7cm;
+  margin: 10px;
+  
+  
 
-  }
+
+
+}
 .right {
-    background-color: var(--white);
-    height: auto;
-    padding:30px;
+    width: 14cm;  background-color: var(--white); height: 29.7cm;;
+    
+    margin: 20px 0px; padding:20px 20px;
     box-shadow: -0px 0px 0px 0px #54585d52;
     font-size: 12pt;
 }
 .title,.Summary, .work , .project {
     margin-bottom: 20px;
 }
-.image, .Contact, .Skills,  .Interests,.Achievements,.soft,.Language {
-    margin-bottom: 42px;
+.image, .Contact, .Skills, .Interests,.Achievements,.soft,.Language {
+    margin-bottom: 40px;
 }
  .container {
   position: relative;
-   /* Maximum width */
-  margin:auto; /* Center it */
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
 }
 
 .container .content {
   position: absolute; /* Position the background text */
-  
   top: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 5, 0); /* Fallback color */
 
   background: rgba(30, 50, 60, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-  width: 104%; /* Full width */
-  padding: 15px; /* Some padding */
- 
-  
+  width: 103%; /* Full width */
+  padding: 10px; /* Some padding */
+  height: auto;
 }
 @media screen and (max-width: 800px) {
-  
-  .right, .container,.content{
-    word-wrap: break-word;
-    
-         
-    width: auto;
-    font-size: auto;}
-  .Left{width:auto;
-    
-  }
-  .full {
-    width:auto;
-  height:auto;}
-    
-        
-         
-    
+    .left, .main, .right {
+      width: 100%;
+      word-wrap: break-word;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .right {
+      
+        word-wrap: break-word;
+    }
+    .left {
+        font-size: auto;width: auto; float: left; height: auto;
+      margin: 10px;
+
     
 }
